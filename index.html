@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Team Red - Todo List</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>Team Red - Todo List</h1>
-    <p id="welcome-msg"></p>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h3 id="logo">TODOCREATOR</h3>
+            <ul class="navbar-list">
+                <li class="navbar-list-item">
+                    <a href="#home">HOME</a>
+                </li>
+                <li class="navbar-list-item">
+                    <a href="#todo">TODO</a>
+                </li>
+                <li class="navbar-list-item">
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li class="navbar-list-item">
+                    <a href="#login">LOG IN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>CREATE INSANE TODO-LIST</h1>
+
+    <div id="input-section">
+        <input type="text" id="input-list-item" placeholder="">
+        <button id="input-button">+</button>
+    </div>
+
 
     <script src="js/main.js"></script>
 </body>
