@@ -32,17 +32,29 @@ a {
     padding: 0px;
     display: flex;
     font-family: 'Roboto', monospace, serif;
-    font-size: 28px;
+    font-size: 1.2em;
     float: right;
-    margin-top: 28px;
+    margin-top: 2vw;
+    margin-right: 2vw;
   }
 #logo {
     font-family: 'Montserrat', monospace, serif;
     float: left;
     color: white;
-    font-size: 28px;
-    margin-left: 1vw;
+    font-size: 1.2em;
+    margin-left: 2vw;
+    margin-top: 2vw;
   }
+
+#logo:before {
+    content: 'TODO';
+    color: white;
+}
+#logo:after {
+    content: 'CREATOR';
+    color: orangered;
+}
+
   
 /* MAIN SECTION */
 
