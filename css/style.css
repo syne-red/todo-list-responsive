@@ -37,6 +37,11 @@ a {
     margin-top: 2vw;
     margin-right: 2vw;
   }
+
+  a:hover {
+    color: orangered;
+  }  
+
 #logo {
     font-family: 'Montserrat', monospace, serif;
     float: left;
@@ -61,7 +66,7 @@ a {
 
   h1 {
     font-family: 'Montserrat', monospace, serif;
-    font-size: 3em;
+    font-size: 2.2em;
     font-weight: 700;
     text-align: center;
     color: white;
@@ -74,21 +79,41 @@ a {
 
   /*Input box */
 
-  #input-list-item {
-    border-radius: 25px;
+  #input-list {
+    border-radius: 50px;
     border: 2px white;
     padding: 20px; 
-    width: 450px;
-    height: 55px;
+    width: 400px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    line-height: center;
+    outline: none;
   }
 
   /*Input button */
   
-    .btn-circle.btn-xl {
+    #input-button {
     width: 55px;
     height: 55px;
     padding: 10px 16px;
     font-size: 24px;
-    line-height: 1.33;
-    border-radius: 35px;
+    line-height: center;
+    border-radius: 50%;
+    outline: none;
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+  }
+
+  #input-button:hover {
+    background-color: white;
+  }
+
+  #input-button:active {
+    background-color: rgb(228, 227, 227);
+  }
+
+  #input-list-item {
+    text-align: center;
+    list-style-type: none;
   }
