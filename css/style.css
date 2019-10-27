@@ -38,6 +38,11 @@ a {
     margin-right: 2vw;
     text-shadow: 2px 1px 10px rgba(0,0,0,0.6);
   }
+
+  a:hover {
+    color: orangered;
+  }  
+
 #logo {
     font-family: 'Montserrat', monospace, serif;
     float: left;
