@@ -20,6 +20,7 @@ a {
     color: white;
     padding: 1vw;
     font-weight: 100;
+    font-size: 0.9em;
 }
 
 .nav-container {
@@ -84,6 +85,8 @@ a {
   /*Input box */
 
   #input-list-item {
+    background: #ffffff94;
+    outline:0;
     border-radius: 36px;
     border: 1px white;
     padding-left: 25px;
@@ -95,6 +98,8 @@ a {
   /*Input button */
   
     .btn-circle.btn-xl {
+      background: #ffffff94;
+      outline:0;
       width: 61px;
       height: 61px;
       font-size: 22px;
@@ -102,11 +107,17 @@ a {
       border: none;
       cursor: pointer;
   }
+    .btn-circle.btn-xl:hover {
+      background: #ffffffc4;
+    }
+    .btn-circle.btn-xl:active {
+      background: #ffffff;
+    }
 
   /* The list */
 
     #list-box {
-      margin: 5vh 0 0 0;
+      margin: 5vh 0 50px 0;
       font-family: 'Roboto', monospace, serif;
     }
 
