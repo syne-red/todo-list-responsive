@@ -1,29 +1,34 @@
-var EventHandler = (function () {
-    function init() {
-        DocumentEdit.setWelcomeMessage('Hello World from JavaScript');
+const TodoListInputTextBox = '#input-list-item';
+const TodoListInputAddButton = '#input-button';
+const TodoList = '#list-box ul';
+
+let storage = {
+    users: [] // array of User class
+};
+
+function onPageLoaded() {
+    // load the local storage once only when the page is loaded
+
+    let localStorageData = localStorage.getItem('data');
+    if (localStorageData === null) {
+        storage = {
+            users: []
+        }
+
+        saveLocalStorage();
     }
 
-    return {
-        init
-    }
-})();
+    storage = JSON.parse(localStorage.getItem('data'));
+}
 
-var DocumentEdit = (function () {
-    function init() {
-    }
+function saveLocalStorage() {
+    // save the local storage every single tiny little change
+    localStorage.setItem('data', JSON.stringify(storage));
+}
 
-    function setWelcomeMessage(msg) {
-        const welcomeMsgParagraph = document.getElementById('welcome-msg');
-        welcomeMsgParagraph.innerText = msg;
-    }
-
-    return {
-        init,
-        setWelcomeMessage
-    }
-})();
-
-document.addEventListener('DOMContentLoaded', function () {
+$(function () { // called on body loaded
     DocumentEdit.init();
     EventHandler.init();
+
+    onPageLoaded();
 })
