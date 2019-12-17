@@ -6,7 +6,7 @@
 
 .navbar {
   overflow: hidden;
-  background-color: #c46526;
+  background-color: #db4f37;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -33,5 +33,5 @@
   }
   
   .navbar a:hover {
-    background-color: #ac551b;
+    background-color: #c5452f;
   }
