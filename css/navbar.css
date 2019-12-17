@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.navbar {
+nav {
   overflow: hidden;
   background-color: #db4f37;
   position: fixed;
@@ -12,7 +12,7 @@
   width: 100%;
   }
   
-  .navbar a {
+  nav a {
     cursor: pointer;
     width: 50%;
     float: left;
@@ -23,15 +23,15 @@
     font-size: 17px;
     padding: 14px 0px;
   }
-  .navbar .nav-box {
+  nav div {
     width: 100%;
     margin: auto;
   }
   
-  .navbar a:first-child{
+  nav a:first-child{
     border-right: 1px solid white;
   }
   
-  .navbar a:hover {
+  nav a:hover {
     background-color: #c5452f;
   }
