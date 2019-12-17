@@ -142,14 +142,13 @@ a {
       
     }
 .list-box {
-  margin: 10px auto;
+  margin: 10px 3%;
   background: rgba(7, 7, 7, 0.466);
   cursor: pointer;
-  width: 100%;
   display: block;
   color: white;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
-  padding: 14px 0px;
+  padding: 20px;
 }
