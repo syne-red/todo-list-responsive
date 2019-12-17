@@ -1,0 +1,37 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #db4f37;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
+  
+  .navbar a {
+    cursor: pointer;
+    width: 50%;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 0px;
+  }
+  .navbar .nav-box {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .navbar a:first-child{
+    border-right: 1px solid white;
+  }
+  
+  .navbar a:hover {
+    background-color: #c5452f;
+  }
