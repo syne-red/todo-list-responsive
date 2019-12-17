@@ -141,15 +141,27 @@ a {
 
       
     }
-.list-box {
-  margin: 10px auto;
-  background: rgba(7, 7, 7, 0.466);
-  cursor: pointer;
-  width: 100%;
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  padding: 14px 0px;
-}
+    
+    .list-box {
+      max-width: 90%;
+      margin: 10px auto;
+      background: rgba(7, 7, 7, 0.466);
+      width: 75%;
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      padding: 14px 0px;
+    }
+    
+    .list-box button {
+      cursor: pointer;
+      margin: 5px;
+      width: 69px;
+      height: 29px;
+      background-color: #c5452f;
+      color: white;
+      border: none;
+    }
+    
