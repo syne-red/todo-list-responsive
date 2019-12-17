@@ -74,6 +74,10 @@ a {
     width: 100%;
     overflow: hidden;
 }
+#input-section{
+  margin:0 auto;
+  width: 550px;
+}
 
 @media screen and (max-width: 600px)  {
   h1 {
@@ -120,9 +124,7 @@ a {
 }
    @media only screen and (max-width: 600px)
     {
-
       #todo-add{
-
         padding: 3%;
       }
       #input-list-item {
