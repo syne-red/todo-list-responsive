@@ -17,7 +17,27 @@ var EventHandler = (function () {
         DocumentEdit.updateTodoList(user.todos);
     }
 
+    // when enter is pressed or the + button, this event is ran
+    function onAddTodoClicked() { 
+        // get the todo list text
+        const todoListText = $(TodoListInputTextBox).val();
+        
+        // check that the todo list text is not empty
+        if (todoListText.length !== 0) {
+            
+            // clear the user input box
+            $(TodoListInputTextBox).val('');
+            
+            // create a new todo
+            let todo = TodoManager.createTodo(todoListText);
+
+            // also add the todo to the HTML
+            DocumentEdit.addTodo(todo);
+        }
+    }
+
     return {
-        init
+        init,
+        onAddTodoClicked
     }
 })();
