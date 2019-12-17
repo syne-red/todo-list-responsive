@@ -127,11 +127,10 @@ a {
   /* The list */
 
 .list-box {
-  max-width: 90%;
   margin: 10px auto;
   background: rgba(7, 7, 7, 0.466);
   cursor: pointer;
-  width: 75%;
+  width: 100%;
   display: block;
   color: white;
   text-align: center;
