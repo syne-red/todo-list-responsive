@@ -161,4 +161,11 @@ a {
   background-color: #c5452f;
   color: white;
   border: none;
+  font-family: 'Montserrat', monospace, serif;
+}
+
+.title-h3 {
+  font-family: 'Montserrat', monospace, serif;
+  font-size: 1.2em;
+  padding: 5px 0px;
 }
