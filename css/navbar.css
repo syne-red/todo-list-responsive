@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 nav {
   overflow: hidden;
   background-color: #db4f37;
@@ -11,8 +12,18 @@ nav {
   bottom: 0;
   width: 100%;
   }
+
+  @media screen and (min-width: 700px) {
+    nav {
+      background-color: #db4f37;
+      position: unset;
+      width: 660px;
+      margin: 0 auto;
+      }
+  }
   
   nav a {
+    font-family: 'Montserrat', monospace, serif;
     cursor: pointer;
     width: 50%;
     float: left;
@@ -22,6 +33,7 @@ nav {
     text-decoration: none;
     font-size: 17px;
     padding: 14px 0px;
+    font-size: 0.8em;
   }
   nav div {
     width: 100%;

@@ -1,7 +1,7 @@
 var LocalStorageManager = (function () {
     // a constant key for the local storage data
     // 'ls' stands for local storage
-    const LocalStorageKeyName = 'todosite-ls-data';
+    const LocalStorageKeyName = 'asdasdasd';
 
     // global storage object we update and is saved to browser LocalStorage as it is
     let storage = null;
@@ -13,9 +13,18 @@ var LocalStorageManager = (function () {
     function initializeDefaultLocalStorage() {
         // if the page is loaded the first time then create the default local storage
         storage = {
-            users: [],
-            currentLoggedInUserEmail: null
+            todos: []
         }
+
+        save();
+    }
+
+    function getAllTodos() {
+        return getStorage().todos;
+    }
+
+    function addTodo(todo) {
+        getStorage().todos.push(todo);
 
         save();
     }
@@ -34,11 +43,6 @@ var LocalStorageManager = (function () {
             // save the local storage object once we created it so it exist in browser
             initializeDefaultLocalStorage();
         }
-
-        if (storage.currentLoggedInUserEmail !== null) {
-            // if the user is already logged in, call the userLoggedIn event
-            EventHandler.onUserLoggedIn(UserManager.getCurrentUser());
-        }
     }
 
     function save() {
@@ -53,6 +57,8 @@ var LocalStorageManager = (function () {
     return {
         init,
         save,
-        getStorage
+        getStorage,
+        getAllTodos,
+        addTodo
     }
 })();

@@ -1,6 +1,6 @@
 const TodoListInputTextBox = '#input-list-item';
 const TodoListInputAddButton = '#input-button';
-const TodoList = '#list-box ul';
+const TodoList = '#todo-main';
 
 let storage = {
     users: [] // array of User class
@@ -27,8 +27,8 @@ function saveLocalStorage() {
 }
 
 $(function () { // called on body loaded
+    LocalStorageManager.init();
     DocumentEdit.init();
     EventHandler.init();
-
     onPageLoaded();
 })
