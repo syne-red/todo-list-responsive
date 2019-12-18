@@ -149,7 +149,15 @@ main {
         padding: 0;
       }
 
-      
+@media screen and (min-width:700px){
+  #input-list-item {
+    width: 84%;    
+  }
+  #input-button{
+    margin-top: 10px;
+    width: 96px;
+  }  
+}      
     
 .list-box {
   margin: 10px 3%;
