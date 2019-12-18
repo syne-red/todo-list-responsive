@@ -1,5 +1,3 @@
-
-
 $("#home").click(function(){
 
     $("#todo-add").fadeOut("fast", function(){

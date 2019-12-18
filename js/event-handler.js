@@ -1,5 +1,6 @@
 var EventHandler = (function () {
     function init() {
+        /*
         $(TodoListInputAddButton).click(function () {
             const todoListText = $(TodoListInputTextBox).val();
             
@@ -10,6 +11,19 @@ var EventHandler = (function () {
                 '<span class="delete"><i class="fas fa-trash"></i></span>' +
                 '<span class="edit"><i class="fas fa-edit"></i></span>' +
                 '</li>');
+        })
+        */
+
+        $(TodoListInputAddButton).click(function () {
+            const todoListText = $(TodoListInputTextBox).val();
+
+            $(TodoList).append (
+                '<article class="list-box">' + 
+                '<h3 class="title-h3">'+ todoListText + '</h3>' +
+                '<button type="button" class="done">DONE</button>' +
+                '<button type="button" class="delete">DELETE</button>' +
+                '</article>'
+            )
         })
     }
 
@@ -36,8 +50,17 @@ var EventHandler = (function () {
         }
     }
 
+    function switchToHomePage() {
+        $("#home").click(function(){
+            $("#todo-add").fadeOut("fast", function(){
+              $("#todo-main").fadeIn();
+            });
+        });
+    }
+
     return {
         init,
-        onAddTodoClicked
+        onAddTodoClicked,
+        switchToHomePage
     }
 })();

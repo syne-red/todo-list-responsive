@@ -1,6 +1,6 @@
 const TodoListInputTextBox = '#input-list-item';
 const TodoListInputAddButton = '#input-button';
-const TodoList = '#list-box ul';
+const TodoList = '#todo-main';
 
 let storage = {
     users: [] // array of User class
