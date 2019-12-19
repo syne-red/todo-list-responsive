@@ -2,19 +2,11 @@ const TodoListInputTextBox = '#input-list-item';
 const TodoListInputAddButton = '#input-button';
 const TodoList = '#todo-main';
 
-let storage = {
-    users: [] // array of User class
-};
-
 function onPageLoaded() {
     // load the local storage once only when the page is loaded
 
     let localStorageData = localStorage.getItem('data');
     if (localStorageData === null) {
-        storage = {
-            users: []
-        }
-
         saveLocalStorage();
     }
 

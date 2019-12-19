@@ -1,8 +1,3 @@
-function User() {
-    this.email = '';
-    this.password = '';
-    this.todoManager = new TodoManager();
-}
 
 function Todo() {
     this.title = '';
@@ -25,5 +20,3 @@ function TodoManager() {
 let todo = new Todo();
 todo.complete();
 
-let user = new User();
-user.todoManager.delete(1234);
