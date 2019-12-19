@@ -16,9 +16,11 @@ nav {
   @media screen and (min-width: 700px) {
     nav {
       background-color: #db4f37;
-      position: unset;
-      width: 660px;
-      margin: 0 auto;
+      /* position: unset; */
+      width: 654px;
+      top: 2vh;
+      bottom: unset;
+      margin: 0px 24px;
       }
   }
   
